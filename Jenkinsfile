@@ -9,7 +9,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'go run build tls-cert-expire.go'
+        sh 'go run tls-cert-expire.go -d www.io-notes.com'
       }
     }
 
